@@ -1,0 +1,25 @@
+def main():
+    user_input = input("Enter name of a file: ")
+
+    updated_user_input = user_input.lower().strip()
+
+    if updated_user_input[-4:] == ".gif":
+        print("image/gif")
+    elif updated_user_input[-4:] == ".jpg":
+        print("image/jpeg")
+    elif updated_user_input[-5:] == ".jpeg":
+        print("image/jpeg")
+    elif updated_user_input[-4:] == ".png":
+        print("image/png")
+    elif updated_user_input[-4:] == ".png.":
+        print("image/png")
+    elif updated_user_input[-4:] == ".pdf":
+        print("application/pdf")
+    elif updated_user_input[-4:] == ".txt":
+        print("text/plain")
+    elif updated_user_input[-4:] == ".zip":
+        print("application/zip")
+    else:
+        print("application/octet-stream")
+
+main()
